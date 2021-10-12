@@ -1,0 +1,38 @@
+.film {
+    position: relative;
+
+    margin-top: -60rem;
+    margin-bottom: 5rem;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    // .film__body
+    &__body {
+        max-width: 57rem;
+
+        padding-bottom: 6.5rem;
+    }
+
+    // .film__play
+    &__play {
+        position: absolute;
+        top: 45%;
+        right: 17rem;
+
+        transition: all 0.5s ease-in;
+
+        @media (max-width: $md1) {
+            right: 5rem;
+        }
+
+        @media (max-width: $md2) {
+            display: none;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

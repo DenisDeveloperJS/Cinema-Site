@@ -1,0 +1,53 @@
+.mobile-nav {
+    display: none;
+
+    transform: translateY(-101%);
+    transition: 0.3s ease-in transform;
+
+    background-color: rgb(10, 10, 10);
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+
+    @media (max-width: $md1) {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: -100%;
+        left: 0;
+
+        z-index: $mobile-nav;
+    }
+
+    // .mobile-nav__list
+    &__list {
+        @media (max-width: $md1) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            gap: 4rem;
+
+            max-width: 24rem;
+
+            overflow: auto;
+
+            margin: 1em 0;
+        }
+    }
+    // .mobile-nav__link
+    &__link {
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
+
+    // Use .mobile-nav_active
+    &_active {
+        transform: translateY(100%);
+    }
+}

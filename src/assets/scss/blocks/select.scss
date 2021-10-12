@@ -1,0 +1,30 @@
+.select {
+    position: relative;
+
+    display: inline-block;
+
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    color: #fff;
+
+    padding: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    appearance: none;
+
+    option {
+        background-color: $bg;
+        border: 0;
+        border-radius: 5px;
+        outline: 0;
+
+        padding: 1rem 1rem;
+
+        &:checked {
+            background: $orange;
+            color: #fff;
+        }
+    }
+}

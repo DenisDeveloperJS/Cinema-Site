@@ -1,0 +1,77 @@
+// Шрифты
+@import 'vendor/fonts';
+
+// Переменые
+@import '_vars';
+
+// Сброс
+@import 'vendor/reset';
+
+// Адаптив картинок
+@import 'vendor/_ibg';
+
+// Подключение контейнера
+@import 'vendor/container';
+
+// Подключение спойлеров
+// @import 'vendor/spoller';
+
+// Подключение иконочных шрифтов
+@import 'vendor/iconfonts';
+
+// Подключение миксинов
+// @import 'mixins'
+
+// Обнуление
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%; // Адаптивный шрифт
+}
+
+body {
+    background-color: $bg; // Стандартный задний фон
+    color: $white; // Стандартный цвет шрифта
+    font-size: 1.6rem; // Стандартный размер шрифта
+    font-family: 'Roboto'; // Подключение шрифтов
+    line-height: 1.5;
+}
+
+._stop-scroll {
+    overflow: hidden;
+}
+
+/* Blocks */
+
+@import 'blocks/header';
+@import 'blocks/footer';
+
+@import 'blocks/btn';
+@import 'blocks/hr';
+@import 'blocks/select';
+@import 'blocks/title';
+@import 'blocks/mobile-nav';
+@import 'blocks/user-header';
+
+// Блок film
+@import 'blocks/film/film';
+@import 'blocks/film/about-film';
+@import 'blocks/film/characteristic-film';
+@import 'blocks/film/film-time';
+
+@import 'blocks/choose/choose';
+@import 'blocks/choose/film-choose-date';
+@import 'blocks/choose/film-choose-place';
+@import 'blocks/choose/film-choose-time';
+
+@import 'blocks/scheme';
+@import 'blocks/legend';
+@import 'blocks/price';
+@import 'blocks/mobile-seet';

@@ -1,0 +1,14 @@
+.film-choose-time {
+    // .film-choose-time__select
+    &__select {
+        width: 10.8rem;
+        height: 6rem;
+
+        background: url('/assets/images/arrow-down.svg') no-repeat right rgba(255, 255, 255, 0.15);
+        background-position-x: 90%;
+    }
+    // .film-choose-time__title
+    &__title {
+        margin-bottom: 3.3rem;
+    }
+}

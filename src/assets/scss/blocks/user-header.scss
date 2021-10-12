@@ -1,0 +1,38 @@
+.user-header {
+    display: flex;
+    align-items: center;
+    min-width: 15rem;
+    // .user-header__name
+    &__name {
+        font-weight: bold;
+        line-height: 19 / 16 * 100%;
+
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+
+        margin-right: 1.1rem;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: darken(#fff, 20%);
+                text-decoration: none;
+            }
+        }
+
+        @media (max-width: $md2) {
+            font-size: 1.8rem;
+        }
+    }
+
+    // .user-header__name
+    &__logo {
+        width: 3.5rem;
+
+        border-radius: 50%;
+        cursor: pointer;
+
+        @media (max-width: $md2) {
+            width: 4.3rem;
+        }
+    }
+}

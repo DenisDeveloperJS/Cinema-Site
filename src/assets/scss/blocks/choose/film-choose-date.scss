@@ -1,0 +1,49 @@
+.film-date {
+    // .film-date__title
+    &__title {
+        margin-bottom: 2rem;
+    }
+    // .film-date__data
+    &__data {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        margin-right: 3.5rem;
+    }
+    // .film-date__item
+    &__item {
+        padding: 0.9rem 2.5rem;
+
+        border: 1px solid #ffffff80;
+        border-radius: 5px;
+
+        transition: all 0.3s ease-in;
+
+        &_active {
+            background-color: $orange;
+            color: $bg;
+        }
+
+        @media (any-hover: hover) {
+            &:hover:not(.film-date__item_active) {
+                background-color: darken($bg, 5%);
+            }
+        }
+    }
+    // .film-date__item-month
+    &__item-month {
+        line-height: 19 / 16 * 100%;
+    }
+    // .film-date__item-day
+    &__item-day {
+        font-family: 'Roboto';
+        font-weight: 900;
+        font-size: 3rem;
+        line-height: 35 / 30 * 100%;
+    }
+    // .film-date__item-week
+    &__item-week {
+        line-height: 22 / 16 * 100%;
+    }
+}

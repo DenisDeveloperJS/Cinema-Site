@@ -1,0 +1,24 @@
+.about-film {
+    margin-bottom: 5rem;
+    // .about-film__title
+    &__title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 150%;
+
+        margin-bottom: 1.1rem;
+        opacity: 0.5;
+    }
+    // .about-film__name
+    &__name {
+        font-size: 3.6rem;
+        font-weight: bold;
+        line-height: 42 / 36 * 100%;
+
+        margin-bottom: 2.3rem;
+    }
+    // .about-film__text
+    &__text {
+        line-height: 150%;
+    }
+}

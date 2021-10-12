@@ -1,0 +1,19 @@
+.mobile-seet {
+    display: none;
+    margin-bottom: 2rem;
+
+    @media (max-width: 570px) {
+        display: block;
+    }
+    // .mobile-seet__input
+    &__input {
+        min-width: 30rem;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    label {
+        margin-right: 2.5rem;
+        font-size: 2.5rem;
+    }
+}

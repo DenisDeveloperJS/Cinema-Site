@@ -1,0 +1,56 @@
+.scheme {
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 1rem;
+
+    margin-bottom: 6.2rem;
+
+    @media (max-width: 570px) {
+        display: none;
+    }
+
+    svg {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    path {
+        cursor: pointer;
+        stroke: none;
+    }
+
+    path:not(.light, .booked) {
+        fill: rgba(255, 255, 255, 0.15);
+
+        transition: all 0.2s ease-in-out;
+
+        @media (any-hover: hover) {
+            &:hover {
+                fill: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+    path.booked {
+        fill: rgba(255, 255, 255, 0.05);
+
+        @media (any-hover: hover) {
+            &:hover {
+                cursor: not-allowed;
+            }
+        }
+    }
+    path.path_active {
+        fill: $orange;
+
+        @media (any-hover: hover) {
+            &:hover {
+                fill: rgba($orange, 0.8);
+            }
+        }
+    }
+}
+
+.light {
+    fill: linear-gradient(180deg, rgba(196, 196, 196, 0.21) 0%, rgba(196, 196, 196, 0) 100%);
+}

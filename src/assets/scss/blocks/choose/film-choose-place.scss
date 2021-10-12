@@ -1,0 +1,21 @@
+.film-place {
+    margin-right: 3rem;
+
+    &__select {
+        display: block;
+        width: 47rem;
+        min-width: 100%;
+        height: 6rem;
+
+        @media (max-width: 520px) {
+            width: 30rem;
+        }
+
+        background: url('/assets/images/arrow-down.svg') no-repeat right rgba(255, 255, 255, 0.15);
+        background-position-x: 97%;
+    }
+    // .film-place__title
+    &__title {
+        margin-bottom: 3.3rem;
+    }
+}

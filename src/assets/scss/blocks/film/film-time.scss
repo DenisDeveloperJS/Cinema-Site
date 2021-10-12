@@ -1,0 +1,15 @@
+.film-time {
+    display: flex;
+    align-items: center;
+
+    margin-right: 3.4rem;
+    // .film-time__icon
+    &__icon {
+        font-size: 2rem;
+        margin-right: 1.4rem;
+    }
+    // .film-time__duration
+    &__duration {
+        line-height: 150%;
+    }
+}

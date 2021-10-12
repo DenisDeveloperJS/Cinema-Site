@@ -1,0 +1,29 @@
+.choose {
+    // .choose__body
+    &__body {
+        display: flex;
+        gap: 2rem 0;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding-bottom: 6.3rem;
+        margin-bottom: 5.5rem;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    // .choose__left
+    &__left {
+    }
+    // .choose__right
+    &__right {
+        display: flex;
+        gap: 3rem 0;
+        align-items: center;
+
+        @media (max-width: 645px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
